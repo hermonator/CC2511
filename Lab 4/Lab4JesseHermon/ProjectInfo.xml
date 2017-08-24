@@ -53,9 +53,17 @@
   </PATHS>
   <FILES>
     <GeneratedCs>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\AS1.c</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\ASerialLdd1.c</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\BitIoLdd1.c</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\BitIoLdd2.c</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\BitIoLdd3.c</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\Blue.c</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\Cpu.c</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\Green.c</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\PE_LDD.c</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\Pins1.c</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\Red.c</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Project_Settings\Startup_Code\startup.c</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Sources\Events.c</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Sources\main.c</PathName>
@@ -64,8 +72,15 @@
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Static_Code\System\Vectors.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\AS1.h</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\ASerialLdd1.h</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\BitIoLdd1.h</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\BitIoLdd2.h</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\BitIoLdd3.h</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\Blue.h</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\CPU_Config.h</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\Cpu.h</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\Green.h</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\IO_Map.h</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\Init_Config.h</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\PE_Const.h</PathName>
@@ -73,6 +88,7 @@
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\PE_LDD.h</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\PE_Types.h</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\Pins1.h</PathName>
+      <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\Red.h</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Generated_Code\Vectors_Config.h</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Sources\Events.h</PathName>
       <PathName>C:\Users\jesse\Desktop\CC2511\Lab 4\Lab4JesseHermon\Static_Code\IO_Map\MK22F51212.h</PathName>

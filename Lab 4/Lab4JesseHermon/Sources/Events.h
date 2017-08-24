@@ -34,6 +34,14 @@
 #include "PE_Const.h"
 #include "IO_Map.h"
 #include "Pins1.h"
+#include "Red.h"
+#include "BitIoLdd1.h"
+#include "Green.h"
+#include "BitIoLdd2.h"
+#include "Blue.h"
+#include "BitIoLdd3.h"
+#include "AS1.h"
+#include "ASerialLdd1.h"
 
 #ifdef __cplusplus
 extern "C" {
