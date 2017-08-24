@@ -6,7 +6,7 @@
 **     Version     : Component 01.048, Driver 01.00, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-08-24, 08:26, # CodeGen: 0
+**     Date/Time   : 2017-08-24, 11:41, # CodeGen: 4
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -56,6 +56,16 @@
 #include "PE_Error.h"
 #include "PE_Const.h"
 #include "Pins1.h"
+#include "sensor.h"
+#include "BitIoLdd1.h"
+#include "Red.h"
+#include "BitIoLdd2.h"
+#include "Blue.h"
+#include "BitIoLdd3.h"
+#include "Green.h"
+#include "BitIoLdd4.h"
+#include "AS1.h"
+#include "ASerialLdd1.h"
 
 
 /*
