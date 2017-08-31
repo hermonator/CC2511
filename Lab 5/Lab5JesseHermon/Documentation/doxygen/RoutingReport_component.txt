@@ -423,7 +423,7 @@
 			</tr>
 			<tr>
 				<td>H8</td><td>PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI</td><td><small><i>same</i></small></td>
-				<td bgcolor='#F7DCFF'>PTA</td><td bgcolor='#F7DCFF'>port1</td><td bgcolor='#F7DCFF'>alt1</td><td bgcolor='#F7DCFF'>Output</td>
+				<td bgcolor='#B3EAFF'>FTM0</td><td bgcolor='#B3EAFF'>tmr_ch6</td><td bgcolor='#B3EAFF'>alt3</td><td bgcolor='#B3EAFF'>Output</td>
 			</tr>
 			<tr>
 				<td>H9</td><td>PTA3/UART0_RTS_b/FTM0_CH0/JTAG_TMS/SWD_DIO</td><td><small><i>same</i></small></td>
@@ -2494,7 +2494,7 @@
 			</tr>
 			<tr>
 				<td>H8</td><td>PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI</td><td><small><i>same</i></small></td>
-				<td bgcolor='#F7DCFF'>PTA</td><td bgcolor='#F7DCFF'>port1</td><td bgcolor='#F7DCFF'>alt1</td><td bgcolor='#F7DCFF'>Output</td>
+				<td bgcolor='#B3EAFF'>FTM0</td><td bgcolor='#B3EAFF'>tmr_ch6</td><td bgcolor='#B3EAFF'>alt3</td><td bgcolor='#B3EAFF'>Output</td>
 			</tr>
 			<tr>
 				<td>H9</td><td>PTA3/UART0_RTS_b/FTM0_CH0/JTAG_TMS/SWD_DIO</td><td><small><i>same</i></small></td>

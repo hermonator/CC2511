@@ -7,7 +7,7 @@
 **     Version     : Component 02.086, Driver 01.00, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-08-24, 11:04, # CodeGen: 1
+**     Date/Time   : 2017-08-31, 08:50, # CodeGen: 9
 **     Abstract    :
 **         This component "BitIO" implements an one-bit input/output.
 **         It uses one bit/pin of a port.
@@ -87,7 +87,7 @@
 #include "PE_Const.h"
 #include "IO_Map.h"
 /* Include inherited beans */
-#include "BitIoLdd4.h"
+#include "BitIoLdd2.h"
 
 #include "Cpu.h"
 
@@ -115,7 +115,7 @@ extern "C" {
 
 ** ===================================================================
 */
-#define Green_GetVal() (BitIoLdd4_GetVal(BitIoLdd4_DeviceData))
+#define Green_GetVal() (BitIoLdd2_GetVal(BitIoLdd2_DeviceData))
 
 /*
 ** ===================================================================
@@ -130,7 +130,7 @@ extern "C" {
 **     Returns     : Nothing
 ** ===================================================================
 */
-#define Green_PutVal(Val) (BitIoLdd4_PutVal(BitIoLdd4_DeviceData, (Val)))
+#define Green_PutVal(Val) (BitIoLdd2_PutVal(BitIoLdd2_DeviceData, (Val)))
 
 /*
 ** ===================================================================
@@ -141,7 +141,7 @@ extern "C" {
 **     Returns     : Nothing
 ** ===================================================================
 */
-#define Green_ClrVal() (BitIoLdd4_ClrVal(BitIoLdd4_DeviceData))
+#define Green_ClrVal() (BitIoLdd2_ClrVal(BitIoLdd2_DeviceData))
 
 /*
 ** ===================================================================
@@ -152,7 +152,7 @@ extern "C" {
 **     Returns     : Nothing
 ** ===================================================================
 */
-#define Green_SetVal() (BitIoLdd4_SetVal(BitIoLdd4_DeviceData))
+#define Green_SetVal() (BitIoLdd2_SetVal(BitIoLdd2_DeviceData))
 
 /* END Green. */
 

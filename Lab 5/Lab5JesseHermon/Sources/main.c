@@ -33,14 +33,15 @@
 #include "Pins1.h"
 #include "sensor.h"
 #include "BitIoLdd1.h"
-#include "Red.h"
-#include "BitIoLdd2.h"
 #include "Blue.h"
 #include "BitIoLdd3.h"
-#include "Green.h"
-#include "BitIoLdd4.h"
 #include "AS1.h"
 #include "ASerialLdd1.h"
+#include "REDdim.h"
+#include "PwmLdd1.h"
+#include "TU1.h"
+#include "Green.h"
+#include "BitIoLdd2.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -57,7 +58,7 @@ void send_string(char *str)
 	byte err,c;
 	unsigned int len; // a size_t is an unsigned integer
 
-	len =  strlen(str  ); // returns the number of chars in str
+	len =  strlen(str); // returns the number of chars in str
 	for(i =  0;  i <  len  ;  i++) {
 //   send this character
 		do   {
@@ -83,23 +84,44 @@ int main(void)
   bool is_on = false;
   char *on = "pull-up on";
   char *off = "pull-up off";
+  char *newLine = "\n";
+  char *startLine ="\r";
+  int brightness = 0;
+  Green_SetVal();
     for(;;){
-    	do {
-    			err = AS1_RecvChar(&c);
-    		  } while (err != ERR_OK);
 
-    	Blue_PutVal(sensor_GetVal());
+    	err = AS1_RecvChar(&c);
 
-    	if(c == ' '){
-    		if(!is_on){
-    			send_string(on);
-    			is_on = true;
-    			//PORTB_PCR19 ^= 0b11;
-    		}else{
-    			send_string(off);
-    			is_on = false;
-    			//PORTB_PCR19 ^= 0b11;
-    		}
+    	if(err != ERR_OK){
+
+			Blue_PutVal(sensor_GetVal());
+
+			if(c == ' '){
+				if(!is_on){
+					send_string(on);
+					send_string(newLine);
+					send_string(startLine);
+					is_on = true;
+					PORTB_PCR19 ^= 0b11;
+				}else{
+					send_string(off);
+					send_string(newLine);
+					send_string(startLine);
+					is_on = false;
+					PORTB_PCR19 ^= 0b00;
+				}
+			} else if(c == 'r'){
+				brightness -= 20;
+				REDdim_SetRatio8(brightness);
+			} else if(c == 'R'){
+				brightness += 20;
+				REDdim_SetRatio8(brightness);
+			} else if(c == 'g'){
+
+			} else if(c == 'G'){
+
+			}
+			c = 'a';
     	}
 
 

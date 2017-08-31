@@ -7,7 +7,7 @@
 **     Version     : Component 01.033, Driver 01.03, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-08-24, 11:04, # CodeGen: 1
+**     Date/Time   : 2017-08-31, 08:50, # CodeGen: 9
 **     Abstract    :
 **         The HAL BitIO component provides a low level API for unified
 **         access to general purpose digital input/output pins across
@@ -17,7 +17,7 @@
 **         portable to various microprocessors.
 **     Settings    :
 **          Component name                                 : BitIoLdd2
-**          Pin for I/O                                    : PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI
+**          Pin for I/O                                    : PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO
 **          Direction                                      : Output
 **          Initialization                                 : 
 **            Init. direction                              : Output
@@ -129,14 +129,14 @@ LDD_TDeviceData* BitIoLdd2_Init(LDD_TUserData *UserDataPtr)
   /* SIM_SCGC5: PORTA=1 */
   SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
   /* Configure pin as output */
-  /* GPIOA_PDDR: PDD|=2 */
-  GPIOA_PDDR |= GPIO_PDDR_PDD(0x02);
+  /* GPIOA_PDDR: PDD|=4 */
+  GPIOA_PDDR |= GPIO_PDDR_PDD(0x04);
   /* Set initialization value */
-  /* GPIOA_PDOR: PDO|=2 */
-  GPIOA_PDOR |= GPIO_PDOR_PDO(0x02);
+  /* GPIOA_PDOR: PDO|=4 */
+  GPIOA_PDOR |= GPIO_PDOR_PDO(0x04);
   /* Initialization of pin routing */
-  /* PORTA_PCR1: ISF=0,MUX=1 */
-  PORTA_PCR1 = (uint32_t)((PORTA_PCR1 & (uint32_t)~(uint32_t)(
+  /* PORTA_PCR2: ISF=0,MUX=1 */
+  PORTA_PCR2 = (uint32_t)((PORTA_PCR2 & (uint32_t)~(uint32_t)(
                 PORT_PCR_ISF_MASK |
                 PORT_PCR_MUX(0x06)
                )) | (uint32_t)(
