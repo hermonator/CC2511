@@ -45,7 +45,7 @@
 /* User includes (#include below this line is not maintained by Processor Expert) */
 void wait(){
 	int i = 0;
-	while(i < 25000){
+	while(i < 500000){
 		i++;
 	}
 }
