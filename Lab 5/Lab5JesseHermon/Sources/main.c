@@ -34,14 +34,12 @@
 #include "sensor.h"
 #include "BitIoLdd1.h"
 #include "Blue.h"
-#include "BitIoLdd3.h"
+#include "PwmLdd2.h"
 #include "AS1.h"
 #include "ASerialLdd1.h"
 #include "REDdim.h"
 #include "PwmLdd1.h"
 #include "TU1.h"
-#include "Green.h"
-#include "BitIoLdd2.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -82,11 +80,12 @@ int main(void)
   byte err,c;
   /* For example: for(;;) { } */
   bool is_on = false;
-  char *on = "pull-up on";
-  char *off = "pull-up off";
+  //char *on = "pull-up on";
+  //char *off = "pull-up off";
   char *newLine = "\n";
   char *startLine ="\r";
   int brightness = 0;
+
   Green_SetVal();
     for(;;){
 
@@ -94,10 +93,10 @@ int main(void)
 
     	if(err != ERR_OK){
 
-			Blue_PutVal(sensor_GetVal());
+			//Blue_PutVal(sensor_GetVal());
 
-			if(c == ' '){
-				if(!is_on){
+			if(c == 'b'){
+				/*if(!is_on){
 					send_string(on);
 					send_string(newLine);
 					send_string(startLine);
@@ -109,7 +108,9 @@ int main(void)
 					send_string(startLine);
 					is_on = false;
 					PORTB_PCR19 ^= 0b00;
-				}
+				}*/
+				brightness -= 20;
+				BLUE_SetRatio8(brightness);
 			} else if(c == 'r'){
 				brightness -= 20;
 				REDdim_SetRatio8(brightness);

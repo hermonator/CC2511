@@ -37,14 +37,12 @@
 #include "sensor.h"
 #include "BitIoLdd1.h"
 #include "Blue.h"
-#include "BitIoLdd3.h"
+#include "PwmLdd2.h"
 #include "AS1.h"
 #include "ASerialLdd1.h"
 #include "REDdim.h"
 #include "PwmLdd1.h"
 #include "TU1.h"
-#include "Green.h"
-#include "BitIoLdd2.h"
 
 #ifdef __cplusplus
 extern "C" {

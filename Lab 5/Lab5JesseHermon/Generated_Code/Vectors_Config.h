@@ -52,15 +52,13 @@
 #include "Pins1.h"
 #include "sensor.h"
 #include "BitIoLdd1.h"
-#include "Blue.h"
-#include "BitIoLdd3.h"
 #include "AS1.h"
 #include "ASerialLdd1.h"
 #include "REDdim.h"
 #include "PwmLdd1.h"
 #include "TU1.h"
-#include "Green.h"
-#include "BitIoLdd2.h"
+#include "BLUE.h"
+#include "PwmLdd2.h"
 #include "Events.h"
 
 #ifdef __cplusplus

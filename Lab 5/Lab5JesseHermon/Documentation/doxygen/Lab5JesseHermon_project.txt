@@ -27,11 +27,10 @@
 
 \page page_components Components 
 - \subpage BitIoLdd1
-- \subpage BitIoLdd3
 - \subpage ASerialLdd1
 - \subpage TU1
 - \subpage PwmLdd1
-- \subpage BitIoLdd2
+- \subpage PwmLdd2
 
 */
 
@@ -65,11 +64,10 @@
 
 \page page_components Components 
 - \subpage BitIoLdd1
-- \subpage BitIoLdd3
 - \subpage ASerialLdd1
 - \subpage TU1
 - \subpage PwmLdd1
-- \subpage BitIoLdd2
+- \subpage PwmLdd2
 
 */
 
