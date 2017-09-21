@@ -49,7 +49,8 @@
 #include "PDD_Includes.h"
 #include "Init_Config.h"
 #include <stdbool.h>
-#include "string.h"
+#include <string.h>
+#include <stdlib.h>
 /* User includes (#include below this line is not maintained by Processor Expert) */
 void MenuDisplay(){
 
@@ -63,18 +64,163 @@ void MenuDisplay(){
 	Term1_SendStr("\n");
 	Term1_SendStr("\r");
 	Term1_SetColor(clBlack,clYellow);
-	Term1_SendStr("+--[ PWM Status ]--+ +-----------------[ How to use ]-----------------+");
+	Term1_SendStr("+--[ PWM Status ]--+");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr("+-----------------[ How to use ]-----------------+");
 	Term1_SetColor(clWhite,clBlack);
 	Term1_SendStr("\n");
 	Term1_SendStr("\r");;
 	Term1_SetColor(clBlack,clYellow);
 	Term1_SendStr(" ");
 	Term1_SetColor(clWhite,clBlack);
-	Term1_SendStr("                                                                     ");
+	Term1_SendStr("                  ");
 	Term1_SetColor(clBlack,clYellow);
 	Term1_SendStr(" ");
-
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr("                                                ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SendStr("\n");
+	Term1_SendStr("\r");
+	//--------------------------------------------------------------
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" Red:   10        ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" Type the following commands:                   ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SendStr("\n");
+	Term1_SendStr("\r");
+	//------------------------------------------------------------
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" Green: 0         ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" > red n       Set the red PWM ratio to n       ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SendStr("\n");
+	Term1_SendStr("\r");
+	//----------------------------------------------------------------
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" Blue:  0         ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" > green n     Set the green PWM ratio to n     ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SendStr("\n");
+	Term1_SendStr("\r");
+	//----------------------------------------------------------------
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr("                  ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" > blue n      Set the blue PWM ratio to n      ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SendStr("\n");
+	Term1_SendStr("\r");
+	//----------------------------------------------------------------
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr("                  ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" > off         Turn all the LEDs off            ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SendStr("\n");
+	Term1_SendStr("\r");
+	//----------------------------------------------------------------
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr("                  ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr("                                                ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SendStr("\n");
+	Term1_SendStr("\r");
+	//----------------------------------------------------------------
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr("                  ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr("                                                ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr(" ");
+	Term1_SendStr("\n");
+	Term1_SendStr("\r");
+	//----------------------------------------------------------------
+	Term1_SendStr("                    ");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr(" ");
+	Term1_SetColor(clBlack,clYellow);
+	Term1_SendStr("                                                  ");
+	Term1_SendStr("\n");
+	Term1_SendStr("\n");
+	Term1_SendStr("\n");
+	Term1_SendStr("\n");
+	Term1_SendStr("\r");
+	Term1_SetColor(clWhite,clBlack);
+	Term1_SendStr("Command prompt:");
+	Term1_SendStr("\n");
+	Term1_SendStr("\r");
+	Term1_SendStr("> ");
+	//----------------------------------------------------------------
 }
+volatile char buffer[100];
+volatile int index;
+volatile bool enter;
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
@@ -86,45 +232,64 @@ int main(void)
   PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
   	  MenuDisplay();
+
   /* Write your code here */
     byte err,c;
     /* For example: for(;;) { } */
     bool is_on = false;
-    char *newLine = "\n";
-    char *startLine ="\r";
     __asm ("wfi");
 
-    int brightness = 0;
+    //int brightness = 0;
+    unsigned short int brightness = 0;
 
       for(;;){
+    	  //char word[7];
+    	  char num_str[3];
+    	  if(enter){
+			  /* if(buffer[0] == 'r'){
+				  for(int i = 0;i<4;i++){word[i] = buffer[i];}
+				  word[4] = '\0';
+				  if(strcmp(word,"red ")== 0){
+					  Term1_MoveTo(10,5);
+					  for(int i = 4;i<6;i++){num_str[i - 4] = buffer[i];}
+					  num_str[2] = '\0';
+					  Term1_SendStr(num_str);
+					  Term1_MoveTo(3,17);
 
-      	//err = AS1_RecvChar(&c);
+					  brightness = atoi(num_str);
+					  RED_SetRatio8(brightness);
+						  }
+			  } */
 
-      	if(err != ERR_OK){
+
+    		  if(sscanf(buffer, "red %hu", &brightness) > 0){
+    			  RED_SetRatio8(brightness);
+    			  Term1_MoveTo(10,5);
+    			  Term1_SendNum(brightness);
+    		  }else if(sscanf(buffer, "green %hu", &brightness) > 0){
+    			  Green_SetRatio8(brightness);
+    			  Term1_MoveTo(10,6);
+    			  Term1_SendNum(brightness);
+    		  }else if(sscanf(buffer, "blue %hu", &brightness) > 0){
+    			  Blue_SetRatio8(brightness);
+    			  Term1_MoveTo(10,7);
+    			  Term1_SendNum(brightness);
+    		  }
+			  enter = false;
+			  Term1_MoveTo(3,17);
+
+			  for(int i = 0 ; i <index + 1; i++){
+
+
+				  Term1_SendChar(' ');
+			  }
+			  Term1_MoveTo(3,17);
+			  index = 0;
+    	  }
 
 
 
-  			if(c == 'b'){
-  				brightness += 20;
-  				Blue_SetRatio8(brightness);
-  			}else if(c == 'B'){
-  				brightness -= 20;
-  				Blue_SetRatio8(brightness);
-  			} else if(c == 'R'){
-  				brightness -= 20;
-  				RED_SetRatio8(brightness);
-  			} else if(c == 'r'){
-  				brightness += 20;
-  				RED_SetRatio8(brightness);
-  			} else if(c == 'g'){
-  				brightness += 20;
-  				Green_SetRatio8(brightness);
-  			} else if(c == 'G'){
-  				brightness -= 20;
-  				Green_SetRatio8(brightness);
-  			}
-  			c = ' ';
-      	}
+
 
 
   }

@@ -173,8 +173,8 @@
       <Counter v="FTM0_CNT" />
       <boolgroup name="Interrupt service/event" v="Disabled" />
       <Period v="3.125095 ms" />
-      <Starting_pulse_width v="3.125 ms" />
-      <Initial_polarity v="high" />
+      <Starting_pulse_width v="0 ms" />
+      <Initial_polarity v="low" />
       <Same_period_in_modes v="no" />
       <Component_uses_entire_timer v="no" />
       <group name="Initialization">
@@ -197,8 +197,8 @@
             <Counter v="FTM0_CNT" />
             <boolgroup name="Interrupt service/event" v="Disabled" />
             <Period v="3.125095 ms" />
-            <Starting_pulse_width v="3.125 ms" />
-            <Initial_polarity v="high" />
+            <Starting_pulse_width v="0 ms" />
+            <Initial_polarity v="low" />
             <group name="Initialization">
               <Enabled_in_init__code v="yes" />
               <group name="Event mask">
@@ -269,8 +269,8 @@
       <Counter v="FTM0_CNT" />
       <boolgroup name="Interrupt service/event" v="Disabled" />
       <Period v="3.125095 ms" />
-      <Starting_pulse_width v="3.125 ms" />
-      <Initial_polarity v="high" />
+      <Starting_pulse_width v="0 ms" />
+      <Initial_polarity v="low" />
       <Same_period_in_modes v="no" />
       <Component_uses_entire_timer v="no" />
       <group name="Initialization">
@@ -293,8 +293,8 @@
             <Counter v="FTM0_CNT" />
             <boolgroup name="Interrupt service/event" v="Disabled" />
             <Period v="3.125095 ms" />
-            <Starting_pulse_width v="3.125 ms" />
-            <Initial_polarity v="high" />
+            <Starting_pulse_width v="0 ms" />
+            <Initial_polarity v="low" />
             <group name="Initialization">
               <Enabled_in_init__code v="yes" />
               <group name="Event mask">
@@ -376,10 +376,10 @@
         <group name="Channel 0">
           <enumgroup name="Mode" v="Compare">
             <Compare v="FTM0_C5V" />
-            <Offset v="3.125 ms" />
-            <enumgroup name="Output on compare" v="Clear">
-              <Output_on_overrun v="Set" />
-              <Initial_state v="High" />
+            <Offset v="0 ms" />
+            <enumgroup name="Output on compare" v="Set">
+              <Output_on_overrun v="Clear" />
+              <Initial_state v="Low" />
               <Output_pin v="ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/FTM0_CH5/FBa_AD1/EWM_OUT_b/SPI1_SCK" />
             </enumgroup>
             <boolgroup name="Interrupt" v="Disabled" />
@@ -388,10 +388,10 @@
         <group name="Channel 1">
           <enumgroup name="Mode" v="Compare">
             <Compare v="FTM0_C7V" />
-            <Offset v="3.125 ms" />
-            <enumgroup name="Output on compare" v="Clear">
-              <Output_on_overrun v="Set" />
-              <Initial_state v="High" />
+            <Offset v="0 ms" />
+            <enumgroup name="Output on compare" v="Set">
+              <Output_on_overrun v="Clear" />
+              <Initial_state v="Low" />
               <Output_pin v="PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO" />
             </enumgroup>
             <boolgroup name="Interrupt" v="Disabled" />
@@ -400,10 +400,10 @@
         <group name="Channel 2">
           <enumgroup name="Mode" v="Compare">
             <Compare v="FTM0_C6V" />
-            <Offset v="3.125 ms" />
-            <enumgroup name="Output on compare" v="Clear">
-              <Output_on_overrun v="Set" />
-              <Initial_state v="High" />
+            <Offset v="0 ms" />
+            <enumgroup name="Output on compare" v="Set">
+              <Output_on_overrun v="Clear" />
+              <Initial_state v="Low" />
               <Output_pin v="PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI" />
             </enumgroup>
             <boolgroup name="Interrupt" v="Disabled" />
@@ -472,8 +472,8 @@
       <Counter v="FTM0_CNT" />
       <boolgroup name="Interrupt service/event" v="Disabled" />
       <Period v="3.125095 ms" />
-      <Starting_pulse_width v="3.125 ms" />
-      <Initial_polarity v="high" />
+      <Starting_pulse_width v="0 ms" />
+      <Initial_polarity v="low" />
       <Same_period_in_modes v="no" />
       <Component_uses_entire_timer v="no" />
       <group name="Initialization">
@@ -496,8 +496,8 @@
             <Counter v="FTM0_CNT" />
             <boolgroup name="Interrupt service/event" v="Disabled" />
             <Period v="3.125095 ms" />
-            <Starting_pulse_width v="3.125 ms" />
-            <Initial_polarity v="high" />
+            <Starting_pulse_width v="0 ms" />
+            <Initial_polarity v="low" />
             <group name="Initialization">
               <Enabled_in_init__code v="yes" />
               <group name="Event mask">

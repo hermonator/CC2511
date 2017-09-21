@@ -30,6 +30,9 @@
 #include "Events.h"
 #include "Init_Config.h"
 #include "PDD_Includes.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -71,12 +74,31 @@ void Cpu_OnNMI(void)
 **     Returns     : Nothing
 ** ===================================================================
 */
+
+extern volatile char buffer[100];
+extern volatile unsigned int index = 0;
+extern volatile bool enter = false;
+
 void Inhr1_OnRxChar(void)
 {
+	char c;
+
+	if (ERR_OK == Inhr1_RecvChar(&c)) {
+		buffer[index] = c; // save the character
+
+
+
+		// TODO echo the char back to the user
+		if(c == '\r'){
+			enter = true;
+		}else{
+			Term1_SendChar(c);
+		}
+		index++;
+	// TODO handle the enter key
+	}
   /* Write your code here ... */
-	//Term1_Cls();
-	//Term1_SetColor(clBlack,clYellow);
-	Term1_SendStr("Interrupt");
+
 }
 
 /* END Events */

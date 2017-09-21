@@ -7,7 +7,7 @@
 **     Version     : Component 01.164, Driver 01.11, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-09-14, 09:53, # CodeGen: 3
+**     Date/Time   : 2017-09-21, 10:38, # CodeGen: 14
 **     Abstract    :
 **          This TimerUnit component provides a low level API for unified hardware access across
 **          various timer devices using the Prescaler-Counter-Compare-Capture timer structure.
@@ -28,28 +28,28 @@
 **            Channel 0                                    : 
 **              Mode                                       : Compare
 **                Compare                                  : FTM0_C5V
-**                Offset                                   : 3.125 ms
-**                Output on compare                        : Clear
-**                  Output on overrun                      : Set
-**                  Initial state                          : High
+**                Offset                                   : 0 ms
+**                Output on compare                        : Set
+**                  Output on overrun                      : Clear
+**                  Initial state                          : Low
 **                  Output pin                             : ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/FTM0_CH5/FBa_AD1/EWM_OUT_b/SPI1_SCK
 **                Interrupt                                : Disabled
 **            Channel 1                                    : 
 **              Mode                                       : Compare
 **                Compare                                  : FTM0_C7V
-**                Offset                                   : 3.125 ms
-**                Output on compare                        : Clear
-**                  Output on overrun                      : Set
-**                  Initial state                          : High
+**                Offset                                   : 0 ms
+**                Output on compare                        : Set
+**                  Output on overrun                      : Clear
+**                  Initial state                          : Low
 **                  Output pin                             : PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO
 **                Interrupt                                : Disabled
 **            Channel 2                                    : 
 **              Mode                                       : Compare
 **                Compare                                  : FTM0_C6V
-**                Offset                                   : 3.125 ms
-**                Output on compare                        : Clear
-**                  Output on overrun                      : Set
-**                  Initial state                          : High
+**                Offset                                   : 0 ms
+**                Output on compare                        : Set
+**                  Output on overrun                      : Clear
+**                  Initial state                          : Low
 **                  Output pin                             : PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI
 **                Interrupt                                : Disabled
 **          Initialization                                 : 
@@ -156,9 +156,9 @@ extern "C" {
 #define TU1_NUMBER_OF_CHANNELS 0x03U   /* Count of predefined channels */
 #define TU1_COUNTER_WIDTH  0x10U       /* Counter width in bits  */
 #define TU1_COUNTER_DIR    DIR_UP      /* Direction of counting */
-#define TU1_OFFSET_0_TICKS 0xFFFFul    /* Initialization value of offset as 'counter ticks' for channel 0 */
-#define TU1_OFFSET_1_TICKS 0xFFFFul    /* Initialization value of offset as 'counter ticks' for channel 1 */
-#define TU1_OFFSET_2_TICKS 0xFFFFul    /* Initialization value of offset as 'counter ticks' for channel 2 */
+#define TU1_OFFSET_0_TICKS 0x00ul      /* Initialization value of offset as 'counter ticks' for channel 0 */
+#define TU1_OFFSET_1_TICKS 0x00ul      /* Initialization value of offset as 'counter ticks' for channel 1 */
+#define TU1_OFFSET_2_TICKS 0x00ul      /* Initialization value of offset as 'counter ticks' for channel 2 */
 /*! Peripheral base address of a device allocated by the component. This constant can be used directly in PDD macros. */
 #define TU1_PRPH_BASE_ADDRESS  0x40038000U
   

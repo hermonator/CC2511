@@ -775,7 +775,7 @@
       <CursorLeft v="don&amp;apos;t generate code" />
       <CursorRight v="don&amp;apos;t generate code" />
       <MoveTo v="generate code" />
-      <SetColor v="don&amp;apos;t generate code" />
+      <SetColor v="generate code" />
       <EraseLine v="don&amp;apos;t generate code" />
       <ReadChar v="generate code" />
       <KeyPressed v="generate code" />
